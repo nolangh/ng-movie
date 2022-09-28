@@ -1,32 +1,31 @@
-<div class="header">
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>
+        <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon><br>
+        <span>Home</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon aria-hidden="false" aria-label="Profile icon">person</mat-icon>
+        <span>Profile</span>
+    </button>
+</mat-menu>
+
+
+
+
+<!-- <div class="header">
     <div class="header__icons">
 
         <div class="header__icon--active">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon><br>
             <p>Home</p>
         </div>
+
         <div class="header__icon">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">flash_on</mat-icon>
-            <p>Trending</p>
-        </div>
-        <div class="header__icon">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">live_tv</mat-icon>
-            <p>Verified</p>
-        </div>
-        <div class="header__icon">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">video_library</mat-icon>
-            <p>Collection</p>
-        </div>
-        <div class="header__icon">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>
-            <p>Search</p>
-        </div>
-        <div class="header__icon">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
             <p>Account</p>
         </div>
 
     </div>
-    <img src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png" alt="" srcset="">
 
-</div>
+</div> -->

@@ -25,6 +25,7 @@
     "@types/axios": "^0.14.0",
     "angular-text-truncate": "^0.0.2",
     "axios": "^0.21.1",
+    "bootstrap": "^5.2.1",
     "firebase": "^9.10.0",
     "ng-text-truncate": "^1.0.0",
     "rxjs": "~6.6.0",
