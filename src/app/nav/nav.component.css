@@ -22,10 +22,18 @@
 
 .nav > h2:hover {
   opacity: 1;
+  color: blueviolet;
   transform: scale(1.2);
 }
 
 .menu-btn {
   background: inherit;
   border: none;
+  transition: transform 50ms ease-out;
+}
+
+.menu-btn:hover {
+  opacity: 1;
+  color: blueviolet;
+  transform: scale(1.2);
 }
