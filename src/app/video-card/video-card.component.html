@@ -1,9 +1,10 @@
-<div class="videoCard">
-    <img src="{{baseUrl}}{{movie.backdrop_path || movie.poster_path}}" alt="" srcset="">
-    <p>{{movie.release_date || movie.first_air_date}}</p>
-    <p>{{(movie.overview)|truncate:[60]}}</p>
-    <h2>{{movie.title}}</h2>
-    <p>
-        Likes: {{movie.vote_count}}
-    </p>
+<div class="container-fluid videoCard-cont">
+    <mat-card class="videoCard">
+        <img mat-card-image src="{{baseUrl}}{{movie.backdrop_path || movie.poster_path}}" alt="" srcset="">
+        <mat-card-content>
+            <h2>{{movie.title}}</h2>
+            <p>{{(movie.overview)|truncate:[60]}}</p>
+            <p>{{movie.release_date || movie.first_air_date}}</p>
+        </mat-card-content>
+    </mat-card>
 </div>

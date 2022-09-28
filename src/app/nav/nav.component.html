@@ -1,4 +1,19 @@
 <div class="nav">
+    <div class="menu-div">
+        <button class="menu-btn" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu Button">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon><br>
+                <span>Home</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon aria-hidden="false" aria-label="Profile icon">person</mat-icon>
+                <span>Profile</span>
+            </button>
+        </mat-menu>
+    </div>
     <h2 (click)="fetchDataAgain('Trending')">Trending</h2>
     <h2 (click)="fetchDataAgain('Top Rated')">Top Rated</h2>
     <h2 (click)="fetchDataAgain('Action')">Action</h2>
@@ -11,4 +26,4 @@
     <h2 (click)="fetchDataAgain('Animation')">Animation</h2>
     <h2 (click)="fetchDataAgain('Movie')">Tv</h2>
 </div>
-<app-results [movies]="movies" ></app-results>
+<app-results [movies]="movies"></app-results>
