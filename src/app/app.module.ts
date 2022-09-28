@@ -15,6 +15,7 @@ import { VideoCardComponent } from './video-card/video-card.component';
 import { TruncatePipe } from './truncate.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { environment } from '../environments/environment';
     ResultsComponent,
     VideoCardComponent,
     TruncatePipe,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
