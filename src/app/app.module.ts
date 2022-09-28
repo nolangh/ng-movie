@@ -24,6 +24,9 @@ import { ResultsComponent } from './results/results.component';
 import { VideoCardComponent } from './video-card/video-card.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { ProfileComponent } from './profile/profile.component';
     TruncatePipe,
     LoginComponent,
     ProfileComponent,
+    SignUpComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
   ],
   imports: [
     AngularFireAuthModule,
