@@ -7,14 +7,16 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 // route guard
 import { AuthGuard } from './shared/guard/auth.guard';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', component: AppComponent },
+  /*{ path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+
   { path: 'register-user', component: SignUpComponent },
   { path: 'profile', component: ProfileComponent, pathMatch: 'full' },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path: 'verify-email-address', component: VerifyEmailComponent },*/
 ];
 
 @NgModule({
