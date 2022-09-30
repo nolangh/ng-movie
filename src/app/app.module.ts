@@ -12,7 +12,6 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { AuthService } from './shared/services/auth.service';
 //* Material themes
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
@@ -23,11 +22,6 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { ResultsComponent } from './results/results.component';
 import { VideoCardComponent } from './video-card/video-card.component';
-import { LoginComponent } from './login/login.component';
-import { ProfileComponent } from './profile/profile.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
@@ -37,11 +31,6 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
     ResultsComponent,
     VideoCardComponent,
     TruncatePipe,
-    LoginComponent,
-    ProfileComponent,
-    SignUpComponent,
-    ForgotPasswordComponent,
-    VerifyEmailComponent,
   ],
   imports: [
     AngularFireAuthModule,
@@ -63,7 +52,7 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
       registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
