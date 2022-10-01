@@ -1,6 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
-import { LoginFormComponent } from './components/login-form/login-form.component';
-import { LoginPageComponent } from './features/auth/pages/login-page';
+
 import {
   canActivate,
   redirectLoggedInTo,
@@ -21,7 +20,10 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./app.module').then((m) => m.AppModule),
+    loadChildren: () =>
+      import('./features/dashboard/dashboard.module').then(
+        (m) => m.DashboardModule
+      ),
     ...canActivate(redirectUnauthorizedToLogin),
   },
   {
