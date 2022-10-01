@@ -19,11 +19,9 @@ const routes: Routes = [
     ...canActivate(redirectLoggedInToHome),
   },
   {
-    path: 'dashboard',
-    loadChildren: () =>
-      import('./features/dashboard/dashboard.module').then(
-        (m) => m.DashboardModule
-      ),
+    path: 'home',
+    //loadChildren: () => import('./app.component').then((m) => m.AppComponent),
+    redirectTo: '',
     ...canActivate(redirectUnauthorizedToLogin),
   },
   {
