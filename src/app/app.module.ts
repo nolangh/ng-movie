@@ -18,10 +18,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 //* App Components
-import { HeaderComponent } from './header/header.component';
-import { NavComponent } from './nav/nav.component';
-import { ResultsComponent } from './results/results.component';
-import { VideoCardComponent } from './video-card/video-card.component';
+import { HeaderComponent } from './features/header/header.component';
+import { NavComponent } from './features/nav/nav.component';
+import { ResultsComponent } from './features/results/results.component';
+import { VideoCardComponent } from './features/video-card/video-card.component';
 
 @NgModule({
   declarations: [
