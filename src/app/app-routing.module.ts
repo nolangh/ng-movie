@@ -21,7 +21,7 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./app.component').then((m) => m.AppComponent),
-    redirectTo: '',
+    //redirectTo: '',
     ...canActivate(redirectUnauthorizedToLogin),
   },
   {
