@@ -9,7 +9,7 @@ import {
 import { NgModule } from '@angular/core';
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['']);
-const redirectLoggedInToHome = () => redirectLoggedInTo(['dashboard']);
+const redirectLoggedInToHome = () => redirectLoggedInTo(['home']);
 
 const routes: Routes = [
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    //loadChildren: () => import('./app.component').then((m) => m.AppComponent),
+    loadChildren: () => import('./app.component').then((m) => m.AppComponent),
     redirectTo: '',
     ...canActivate(redirectUnauthorizedToLogin),
   },
