@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~12.1.0",
     "@angular/platform-browser-dynamic": "~12.1.0",
     "@angular/router": "~12.1.0",
-    "@angular/service-worker": "~12.1.0",
+    "@angular/service-worker": "^15.2.8",
     "@types/axios": "^0.14.0",
     "angular-text-truncate": "^0.0.2",
     "axios": "^0.21.1",
